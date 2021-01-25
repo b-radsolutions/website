@@ -1,8 +1,102 @@
-body {
-  background-color: lightblue;
+body, html {
+  height: 100%;
+  background-color: white;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+.parallax {
+  /* The image used */
+  background-image: url("Background.jpg");
+
+  /* Full height */
+  height: 90%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #CC0000;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px
+
+}
+
+#home {
+
+}
+
+#about h3 {
+	color: white;
+}
+
+#about p{
+	color: #7A7A7A;
+}
+
+#about {
+  margin: auto;
+  width: 80%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: white;
+}
+
+#about .profile-pic {
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+
+#education {
+  margin: auto;
+  width: 80%;
+	padding-top: 25px;
+}
+
+#experience {
+  margin: auto;
+  width: 80%;
+	padding-top: 25px;
+}
+
+#projects {
+  margin: auto;
+  width: 80%;
+	padding-top: 25px;
+}
+
+#connect {
+	padding-top: 70px;
+	padding-bottom: 270px;
+	width: 100%;
+}
+
+img.logo{
+	text-align: center;
+	height: 40px;
+	transition: 0.3s ease-out;
+	padding: 0px 5px 0px;
+}
+
+img.logo:hover{
+	transform: scale(1.3);
+}
+
+rect{
+  fill: url(aboutme.jpg);
+  stroke:black;
+  stroke-width:5;
+  opacity:0.5
 }
